@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+--Violet: hsl(257, 40%, 49%);
+--Magenta: hsl(300, 69%, 71%);
+}
+
+
+.body{
+    padding:0 55px;
+}
+
+body 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    height: 100vh;
+    /* background-image: url("images/bg-desktop.svg"); */
+    background-color: var(--Violet);
+    background-repeat: no-repeat;
+    /* background-position: botom; */
+}
+
+.thumbnail {
+    display:flex;
+    justify-content: center;
+}
+.pisah {
+    width: 180px;
+    margin-left: 125px;
+    margin-top: 30px;
+
+}
+.text h1 {
+    font-weight: 600;
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.text p {
+
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.text { 
+    width: 30%;
+    margin-top: 50px;
+    padding-right: 50px;
+    color: white;
+}
+.logo img{
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+.text button {
+    padding: 10px 50px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    color: var(--Violet);
+}
+.text button :hover {
+    color: black;
+}
+.text button a {
+    text-decoration: none;
+} 
+
+.icons-social{
+    color:white;
+    text-align: right;
+    gap:5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons-social i{
+    padding: 10px;
+    border:1px solid white;
+    border-radius: 50%;
+}
+
+
+@media (max-width:880px) {
+
+    body{
+        padding:0;
+        width: auto;
+        margin:0;
+        box-sizing: border-box;
+    }
+    .thumbnail {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .pisah{
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .logo img{
+        width:100%;
+        margin: auto;
+    }
+    .text{
+        width:100%;
+        padding-right:0;
+        margin-top: 10px;
+    }
+
+    .text h1{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .text p {
+        text-align: center;
+    }
+ 
+    .text button{
+        display: block;
+        margin:auto;
+    }
+
+    .icons-social{
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .icons-social i {
+        padding: 7px;
+    }
+}
